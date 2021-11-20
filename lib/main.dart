@@ -15,7 +15,6 @@ class FirstPage extends StatefulWidget {
 class _State extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
@@ -103,7 +102,7 @@ class _State extends State<FirstPage> {
                                         child: Text(Products[ind]['p_name']),
                                       ),
                                     ),
-                                    Expanded(
+                                    const Expanded(
                                       flex: 1,
                                       child: Center(
                                         child: Icon(Icons.shopping_cart),
@@ -138,7 +137,7 @@ class _State extends State<FirstPage> {
                     return GestureDetector(
                       onTap: (){
                         setState(() {
-                          //Navigator.of(context).push(MaterialPageRoute(builder: (context)=> SingleProduct(Products[ind])));
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=> SingleProduct(Products[ind])));
                         });
                       },
                       child: Card(

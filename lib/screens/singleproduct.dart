@@ -21,7 +21,6 @@ class SingleProduct extends StatelessWidget{
           Text(product['p_desc']),
           ElevatedButton(
             onPressed: (){
-
             },
             child: Text('Add to Cart'),
           )
